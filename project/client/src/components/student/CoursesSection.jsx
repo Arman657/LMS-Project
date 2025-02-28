@@ -13,7 +13,7 @@ const CoursesSection = () => {
 
         <p className='text-sm md:text-base text-gray-500 mt-3'>Dive into our top courses, from coding and creativity to business and well-being—crafted for your success.</p>
 
-        <div className=''>
+        <div className='grid grid-cols-auto px-4 md:px-0 md:my-16 my-10 gap-4'>
             {
               allCourses.slice(0, 4).map((course, index) => <CourseCard key={index} course={course} /> )
             }
